@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <title>
+        CFS Hồng Đức - Đặt câu hỏi
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link href="/css/nucleo-icons.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="/css/black-dashboard.min.css?v=1.0.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper">
+        <div class="sidebar">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+    -->
+            <%-include("partials/sidebar-wrapper")-%>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+
+            <%-include("partials/navbar")-%>
+            <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="tim-icons icon-simple-remove"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Đặt câu hỏi</h5>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-5 pr-md-1">
+                                            <div class="form-group">
+                                                <label>Họ và tên</label>
+                                                <input type="text" name="fullname" class="form-control fullname" placeholder="Nguyễn Văn A" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 px-md-1">
+                                            <div class="form-group">
+                                                <label>Lớp</label>
+
+                                                <select class="selectpicker grade" data-size="10" data-style="btn btn-primary" title="Lớp">
+                                                    <option disabled>Lớp</option>
+                                                    <option value="10A1" selected>10A1</option>
+                                                    <option value="10A2">10A2</option>
+                                                    <option value="10A3">10A3</option>
+                                                    <option value="10A4">10A4</option>
+                                                    <option value="10A5">10A5</option>
+                                                    <option value="10A6">10A6</option>
+                                                    <option value="10A7">10A7</option>
+                                                    <option value="10A8">10A8</option>
+                                                    <option value="10A9">10A9</option>
+                                                    <option value="10A10">10A10</option>
+                                                    <option value="10A11">10A11</option>
+                                                    <option value="10A12">10A12</option>
+                                                    <option value="10A13">10A13</option>
+                                                    <option value="10A14">10A14</option>
+                                                    <option value="10A15">10A15</option>
+
+                                                    <option value="11A1">11A1</option>
+                                                    <option value="11A2">11A2</option>
+                                                    <option value="11A3">11A3</option>
+                                                    <option value="11A4">11A4</option>
+                                                    <option value="11A5">11A5</option>
+                                                    <option value="11A6">11A6</option>
+                                                    <option value="11A7">11A7</option>
+                                                    <option value="11A8">11A8</option>
+                                                    <option value="11A9">11A9</option>
+                                                    <option value="11A10">11A10</option>
+                                                    <option value="11A11">11A11</option>
+                                                    <option value="11A12">11A12</option>
+                                                    <option value="11A13">11A13</option>
+                                                    <option value="11A14">11A14</option>
+                                                    <option value="11A15">11A15</option>
+
+                                                    <option value="12A1">12A1</option>
+                                                    <option value="12A2">12A2</option>
+                                                    <option value="12A3">12A3</option>
+                                                    <option value="12A4">12A4</option>
+                                                    <option value="12A5">12A5</option>
+                                                    <option value="12A6">12A6</option>
+                                                    <option value="12A7">12A7</option>
+                                                    <option value="12A8">12A8</option>
+                                                    <option value="12A9">12A9</option>
+                                                    <option value="12A10">12A10</option>
+                                                    <option value="12A11">12A11</option>
+                                                    <option value="12A12">12A12</option>
+                                                    <option value="12A13">12A13</option>
+                                                    <option value="12A14">12A14</option>
+                                                    <option value="12A15">12A15</option>
+                                                    <option value="different">Khác</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 pl-md-1">
+                                            <div class="form-group">
+                                                <label>Trường</label>
+                                                <select class="selectpicker grade" data-size="10" data-style="btn btn-primary" title="Lớp">
+                                                    <option disabled>Trường</option>
+                                                    <option value="THPT Hồng Đức" selected>THPT Hồng Đức</option>
+                                                    <option value="THPT Chuyên Nguyễn Du">THPT Chuyên Nguyễn Du</option>
+                                                    <option value="THCS và THPT Đông Du">THCS và THPT Đông Du</option>
+                                                    <option value="THPT Chu Văn An">THPT Chu Văn An</option>
+                                                    <option value="THPT Buôn Ma Thuột">THPT Buôn Ma Thuột</option>
+                                                    <option value="THPT Cao Bá Quát">THPT Cao Bá Quát</option>
+                                                    <option value="THPT DTNT Tây Nguyên">THPT DTNT Tây Nguyên</option>
+                                                    <option value="THPT Thực hành Cao Nguyên">THPT Thực hành Cao Nguyên</option>
+                                                    <option value="THPT Lê Duẩn">THPT Lê Duẩn</option>
+                                                    <option value="THPT Lê Quý Đôn">THPT Lê Quý Đôn</option>
+                                                    <option value="Trường TH, THCS, THPT Hoàng Việt">Trường TH, THCS, THPT Hoàng Việt</option>
+                                                    <option value="Victory School">Victory School</option>
+                                                    <option value="different">Khác</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label>Nội dung hỏi</label>
+                                                <textarea rows="10" cols="500" class="form-control" placeholder="Nội dung câu hỏi" value="Mike">...</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p><label>Chấp nhân nội quy</label></p>
+
+                                    <input type="checkbox" checked name="checkbox" class="bootstrap-switch" data-on-label="<i class='tim-icons icon-check-2'></i>" data-off-label="<i class='tim-icons icon-simple-remove'></i>" />
+
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-fill btn-primary send-question">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-user">
+                            <div class="card-body">
+                                <p class="card-text">
+                                <div class="author">
+                                    <div class="block block-one"></div>
+                                    <div class="block block-two"></div>
+                                    <div class="block block-three"></div>
+                                    <div class="block block-four"></div>
+                                    <a href="javascript:void(0)">
+                                        <img class="avatar" src="/img/rules.png" alt="...">
+                                        <h5 class="title">Nội quy</h5>
+                                    </a>
+                                </div>
+                                </p>
+                                <div class="card-description">
+                                    <ul>
+                                        <li>
+                                            Không dùng những từ ngữ thô tục, xúc phạm thầy cô, bạn bè.
+                                        </li>
+                                        <li>
+                                            Không spam
+                                        </li>
+                                        <li>
+                                            Không khiêu khích, chửi nhau, hẹn đánh nhau.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="button-container">
+                                    <button href="https://www.facebook.com/HongDucCofessions" class="btn btn-icon btn-round btn-facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-include("partials/footer")-%>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="/js/core/jquery.min.js"></script>
+    <script src="/js/core/popper.min.js"></script>
+    <script src="/js/core/bootstrap.min.js"></script>
+    <script src="/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/js/plugins/bootstrap-switch.js"></script>
+    <!--  Google Maps Plugin    -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Chart JS -->
+    <script src="/js/plugins/bootstrap-selectpicker.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+    <script src="/demo/demo.js"></script>
+    <script>
+        $(document).ready(function() {
+            $().ready(function() {
+                $sidebar = $('.sidebar');
+                $navbar = $('.navbar');
+                $main_panel = $('.main-panel');
+
+                $full_page = $('.full-page');
+
+                $sidebar_responsive = $('body > .navbar-collapse');
+                sidebar_mini_active = true;
+                white_color = false;
+
+                window_width = $(window).width();
+
+                fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+
+
+                $('.fixed-plugin a').click(function(event) {
+                    if ($(this).hasClass('switch-trigger')) {
+                        if (event.stopPropagation) {
+                            event.stopPropagation();
+                        } else if (window.event) {
+                            window.event.cancelBubble = true;
+                        }
+                    }
+                });
+
+                $('.fixed-plugin .background-color span').click(function() {
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+
+                    var new_color = $(this).data('color');
+
+                    if ($sidebar.length != 0) {
+                        $sidebar.attr('data', new_color);
+                    }
+
+                    if ($main_panel.length != 0) {
+                        $main_panel.attr('data', new_color);
+                    }
+
+                    if ($full_page.length != 0) {
+                        $full_page.attr('filter-color', new_color);
+                    }
+
+                    if ($sidebar_responsive.length != 0) {
+                        $sidebar_responsive.attr('data', new_color);
+                    }
+                });
+
+                $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function() {
+                    var $btn = $(this);
+
+                    if (sidebar_mini_active == true) {
+                        $('body').removeClass('sidebar-mini');
+                        sidebar_mini_active = false;
+                        blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+                    } else {
+                        $('body').addClass('sidebar-mini');
+                        sidebar_mini_active = true;
+                        blackDashboard.showSidebarMessage('Sidebar mini activated...');
+                    }
+
+                    // we simulate the window Resize so the charts will get updated in realtime.
+                    var simulateWindowResize = setInterval(function() {
+                        window.dispatchEvent(new Event('resize'));
+                    }, 180);
+
+                    // we stop the simulation of Window Resize after the animations are completed
+                    setTimeout(function() {
+                        clearInterval(simulateWindowResize);
+                    }, 1000);
+                });
+
+                $('.switch-change-color input').on("switchChange.bootstrapSwitch", function() {
+                    var $btn = $(this);
+
+                    if (white_color == true) {
+
+                        $('body').addClass('change-background');
+                        setTimeout(function() {
+                            $('body').removeClass('change-background');
+                            $('body').removeClass('white-content');
+                        }, 900);
+                        white_color = false;
+                    } else {
+
+                        $('body').addClass('change-background');
+                        setTimeout(function() {
+                            $('body').removeClass('change-background');
+                            $('body').addClass('white-content');
+                        }, 900);
+
+                        white_color = true;
+                    }
+
+
+                });
+
+                $('.light-badge').click(function() {
+                    $('body').addClass('white-content');
+                });
+
+                $('.dark-badge').click(function() {
+                    $('body').removeClass('white-content');
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+        window.TrackJS &&
+            TrackJS.install({
+                token: "ee6fab19c5a04ac1a32a645abde4613a",
+                application: "black-dashboard-free"
+            });
+    </script>
+</body>
+
+</html>
